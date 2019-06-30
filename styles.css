@@ -178,7 +178,7 @@ a.social:hover {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex;
       max-width: 1200px;
-      -ms-flex-pack: center;
+      -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
   }
