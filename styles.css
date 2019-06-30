@@ -8,8 +8,9 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'San Francisco', sans-serif;
-  color: #222;
-  background: #f7f5f0;
+  color: white;
+  font-weight: 700;
+  background: black;
 }
 /* Link Styles */
 
@@ -69,12 +70,12 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
+  border-radius: 12px;
+  border: 3px solid yellow;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(2) rotate(360deg);
 }
 .tag {
   background-color: #efefef;
@@ -83,7 +84,7 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-  max-width: 600px;
+  max-width: 320px;
 }
 .location {
   background-color: #222;
@@ -94,13 +95,14 @@ header .profile-image:hover {
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
+  background: #222;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
+  min-width: 320px;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: yellow;
 }
 
 ul.skills {
@@ -111,14 +113,15 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
-  color: white;
+  background: yellow;
+  color: black;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: black;
+  color: white;
 }
 
 footer {
@@ -149,7 +152,7 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .4;
+  opacity: 1;
   transition: all .5s;
 }
 a.twitter {
@@ -162,7 +165,7 @@ a.github {
   background-image: url(images/github.svg);
 }
 a.social:hover {
-  opacity: 1;
+  opacity: .4;
 }
 .clearfix {
   clear: both;
@@ -175,7 +178,7 @@ a.social:hover {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex;
       max-width: 1200px;
-      -ms-flex-pack: distribute;
+      -ms-flex-pack: center;
       justify-content: space-around;
       margin: 0 auto;
   }
